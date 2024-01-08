@@ -2,7 +2,9 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif; overflow-x: hidden;
+    font-family: 'Poppins', sans-serif; 
+}body {
+    overflow-x: hidden;
 }
 /*--------------------banner image-----------------------------------------*/
 .header{
@@ -207,105 +209,7 @@ nav img{
         max-width: 100%;
     }
 } 
-table {
-    width: 90%;
-    margin: 0 auto; /* Set margin to auto and remove margin-left */
-    border-collapse: collapse;
-    overflow: hidden;
-  }
-
-  td {
-    border: 2px solid #ddd; /* Thicker border */
-    padding: 8px;
-    text-align: center;
-    width: 25%;
-    aspect-ratio: 1;
-  }
-  
-  .choose-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-     margin-top: 42px;
-
-}
-
-.choose-card{
-    height: 300px;
-    width:25col0px;
-background-color: rgba(177, 215, 250, 0.774);
-padding: 3% 8%;
-border-radius: 8px;
-transition: 0.6s;
-} 
- .choose-card i{
-color: #024e8b;
-margin-top: 40px;
-margin-bottom: 15px;
-font-size: 2.1rem;
-
- }
- .choose-card p{
-    text-align: left;
-    margin: 20px 0;
-    width:100%;
- }
- .choose-card:hover{
-    background:linear-gradient(90deg,#00BAD5,#004bd5 );
-    transform: translateY(-8px);
- }
- .choose-card:hover i{
-    color: #0a0a0a;
-    
-    }
-    .choose-card:hover h3 {
-        color: #0a0a0a;
-    }
-    .choose-card:hover p{
-        color: #0a0a0a;
-    }
-    @media (max-width: 700px) {
-        .choose-cards {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    
-        table {
-            overflow-x: auto; /* Change to 'auto' for horizontal scrolling on small screens */
-        }
-    }
-    
-    @media (max-width: 600px) {
-        .choose-cards {
-            grid-template-columns: repeat(1, 1fr);
-        }
-    
-        h1 {
-            font-size: 1rem;
-        }
-    
-        p {
-            width: 100%;
-        }
-    }
-    
-    @media (max-width: 400px) {
-        .choose-card {
-            height: 200px;
-            width: 100%;
-        }
-    
-        .choose-card i {
-            margin-top: 20px;
-        }
-    
-        h3 {
-            margin-bottom: 12px;
-        }
-    
-        p {
-            width: 90%;
-        }
-    }
+ 
     .industries{
         display: flex; padding-top: 60px;
         flex-direction: column; background-color:rgb(3, 0, 32);
@@ -324,56 +228,15 @@ font-size: 2.1rem;
         padding-bottom: 20px;
         padding-top: 20px;
        }
-       .industries-icon ul {
-        display: flex;
-        list-style: none;
-        padding: 0;
-      }
+       
       
-      .industries-icon ul li {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #0090a7 ; /* Set the desired color */
-        font-size: 40px;
-        height: 80px;
-        width: 80px;
-        background: rgb(3, 0, 32) ;
-        line-height: 60px;
-        border-radius: 50%;
-        margin: 0 15px;
-        cursor: pointer;
-        transition: 0.5s;
-      }
+       
        
       .industries p{
         color: #f2f2f2;
       }
-      .industries-icon ul li:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: inherit;
-        width: inherit;
-        background: #fafafa; /* Set the desired color */
-        border-radius: 50%;
-        transform: scale(.9);
-        z-index: -1;
-        transition: 0.5s; 
-      }
-      .industries-icon i
-      ul li:hover:before {
-        filter: blur(3px);
-        transform: scale(0.8);
-      }
-      
-      .industries-icon ul li:hover {
-        color:  #fcfeff; /* Set the desired color */
-        box-shadow: 0 0 15px #fafafa; /* Set the desired color */
-        text-shadow: 0 0 15px #fdfdfd; /* Set the desired color */
-      }
+       
+       
       /*------------------------------footer-------------------------------------------------------*/
       footer{
         background-color: #000000ff;
@@ -540,4 +403,26 @@ font-size: 2.1rem;
     width: 500px;
     height: 400px;
     background: url('rocket.png') center/cover; 
+}
+.main-image01 {
+    width: 320px;
+    height: 200px;
+    background: url('odoo.png') center/cover; 
+}
+.hero-btn1 {
+    background-color: #fff; /* White background */
+    color: #0d003a; /* Dark text color */
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #0d003a; /* Dark border */
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.hero-btn1:hover {
+    background-color: #0d003a; /* Dark background on hover */
+    color: #fff; /* White text color on hover */
 }
